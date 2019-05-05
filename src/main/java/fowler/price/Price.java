@@ -1,4 +1,4 @@
-package fowler;
+package fowler.price;
 
 abstract class Price {
     abstract int getPriceCode();

@@ -1,5 +1,10 @@
 package fowler;
 
+import fowler.price.ChildrensPrice;
+import fowler.price.NewReleasePrice;
+import fowler.price.Price;
+import fowler.price.RegularPrice;
+
 public class Movie {
     public static final int CHILDRENS = 2;
     public static final int REGULAR = 0;
@@ -37,7 +42,7 @@ public class Movie {
                 price = new ChildrensPrice();
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect fowler.Price Code");
+                throw new IllegalArgumentException("Incorrect fowler.price.Price Code");
         }
     }
 

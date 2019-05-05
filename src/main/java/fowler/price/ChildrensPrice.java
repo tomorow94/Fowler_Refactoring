@@ -1,4 +1,6 @@
-package fowler;
+package fowler.price;
+
+import fowler.Movie;
 
 public class ChildrensPrice extends Price {
     int getPriceCode(){
