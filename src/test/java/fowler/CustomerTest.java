@@ -1,3 +1,4 @@
+package fowler;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,7 +20,7 @@ class CustomerTest {
 
     @Test
     void statement() {
-        String expected = "Rental Record for joe\n" +
+        String expected = "fowler.Rental Record for joe\n" +
                 "\tTitle\t\tDays\tAmount\n" +
                 "\tmovie1\t\t10\t30.0\n" +
                 "\tmovie2\t\t5\t4.5\n" +

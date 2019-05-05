@@ -1,3 +1,5 @@
+package fowler;
+
 public class Movie {
     public static final int CHILDRENS = 2;
     public static final int REGULAR = 0;
@@ -12,11 +14,7 @@ public class Movie {
     }
 
     public int getFrequentRenterPoints(int daysRented) {
-        return price.getFrequentRenterPoints();
-        if ((priceCode == Movie.NEW_RELEASE) && daysRented > 1){
-            return 2;
-        }
-        return 1;
+        return price.getFrequentRenterPoints(daysRented);
     }
 
     public double getCharge(int daysRented) {
@@ -39,7 +37,7 @@ public class Movie {
                 price = new ChildrensPrice();
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect Price Code");
+                throw new IllegalArgumentException("Incorrect fowler.Price Code");
         }
     }
 
