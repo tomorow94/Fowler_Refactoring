@@ -19,7 +19,7 @@ public class Movie {
     }
 
     public double getCharge(int daysRented) {
-        return price.getCharge();
+        return price.getCharge(daysRented);
     }
 
     public int getPriceCode() {
