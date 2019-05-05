@@ -1,7 +1,9 @@
 package fowler;
-import org.junit.jupiter.api.Assertions;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerTest {
     private Customer customer;
@@ -27,7 +29,6 @@ class CustomerTest {
                 "Amount owed is 34.5\n" +
                 "You earned 3 frequent renter points";
         String result = customer.statement();
-        Assertions.assertEquals(expected, result);
-
+        assertEquals(expected, result);
     }
 }
